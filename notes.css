@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(120deg, rgba(203,153,234,1) 30%, rgba(197,225,246,1) 100%);
+    min-height: 100vh;
+    padding: 50px 150px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.title{
+    display: flex;
+    align-items: center;
+}
+.title h1{
+    font-size: 40px;
+    color: #fff;
+}
+#icon{
+    width: 50px;
+    height: 50px;
+}
+header button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: none;
+    width: 180px;
+    padding: 10px 30px;
+    background: #702aad;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#pen{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: none;
+}
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+}
+.notes{
+    min-width: 200px;
+    max-width: 700px;
+    min-height: 200px;
+    height: fit-content;
+    padding-left: 30px;
+    margin: 30px;
+}
+
+.notes-display{
+    min-width: 600px;
+    max-width: 700px;
+    min-height: 200px;
+    height: fit-content;
+    overflow: scroll;
+    border-radius: 10px;
+    border: none;
+    text-wrap: wrap;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+.notes-display::-webkit-scrollbar{
+    display: none;
+}
+.deletebtn{
+    position: relative;
+    left: -30px; 
+    bottom: 15px;
+    border: none;
+    cursor: pointer;
+}
